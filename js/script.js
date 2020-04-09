@@ -25,6 +25,7 @@ const titleClickHandler = function(event){
 
   /* Get 'href' attribute from the clicked link */
   const clickedLink = clickedElement.getAttribute('href');
+  console.log(clickedLink);
 
   /* Find the correct article using the selector (value of 'href' attribute) */
 
