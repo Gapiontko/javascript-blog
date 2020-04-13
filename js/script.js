@@ -53,17 +53,16 @@ const generateTitleLinks = function (){
 
     /* For each article */
     const articles =document.querySelectorAll(optArticleSelector);
-    for (let article of articles) {
-
-    /* Get the article id */
+       for (let article of articles) {
+    /* get the article id */
 
       const articleId = article.getAttribute ('id');
 
-    /* Find the article title */
+    /* find the article title */
 
-    /* Create html of the link*/
+    /* create html of the link*/
 
-    /* Insert link into the titlelist */
+    /* insert link into the titlelist */
     }
 }
 generateTitleLinks ()
