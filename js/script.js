@@ -35,12 +35,6 @@
   currentArticle.classList.add('active');
 }
 
-const links = document.querySelectorAll('.titles a');
-
-for(let link of links){
-  link.addEventListener('click', titleClickHandler);
-}
-
 const optArticleSelector = '.post',
   optTitleSelector = '.post-title',
   optTitleListSelector = '.titles'
@@ -70,6 +64,14 @@ const generateTitleLinks = function (){
      html = html + linkHTML;
     }
     titleList.innerHTML = html;
+
+    /* display the selcted article in the main section */
+    const links = document.querySelectorAll('.titles a');
+    console.log(links);
+
+    for(let link of links){
+      link.addEventListener('click', titleClickHandler);
+    }
 }
 generateTitleLinks ()
 }
