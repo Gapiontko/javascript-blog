@@ -64,9 +64,9 @@ const generateTitleLinks = function (){
 
     /* create html of the link */
       const linkHTML = '<li><a href="#' + articleId + '"><span>' + articleTitle + '</span></a></li>';
-      console.log(linkHTML);
 
     /* insert link into the titlelist */
+    titleList.insertAdjacentHTML('afterbegin', linkHTML);
     }
 }
 generateTitleLinks ()
