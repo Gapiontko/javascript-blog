@@ -46,6 +46,7 @@ const optArticleSelector = '.post',
   optTitleListSelector = '.titles'
 
 const generateTitleLinks = function (){
+  let html = '';
 
     /* Remove contents of titleList  */
     const titleList = document.querySelector (optTitleListSelector)
@@ -65,9 +66,10 @@ const generateTitleLinks = function (){
     /* create html of the link */
       const linkHTML = '<li><a href="#' + articleId + '"><span>' + articleTitle + '</span></a></li>';
 
-    /* insert link into the titlelist */
-    titleList.insertAdjacentHTML('afterbegin', linkHTML);
+    /* insert link into html variable */
+     html = html + linkHTML;
     }
+    titleList.innerHTML = html;
 }
 generateTitleLinks ()
 }
