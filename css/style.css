@@ -3,7 +3,11 @@
 /* Global */
 a {
   text-decoration: none;
-  color: blue;
+  color: #342E37;
+}
+
+a:hover {
+  color: #9FD356;
 }
 
 *, *::before, *::after {
@@ -11,9 +15,9 @@ a {
 }
 
 body {
-  background: #fff;
+  background: #FAFFFD;
   font-family: "Source Sans Pro", sans-serif;
-  color: #444;
+  color: #342E37;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.7;
@@ -22,6 +26,8 @@ body {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  padding-top: 245px;
+  z-index: -1;
 }
 
 .section-title {
@@ -34,7 +40,24 @@ body {
 .section-title span {
   text-transform: none;
   font-weight: 400;
-  color: #777777;
+  color: #695c6f;
+}
+
+/* Header */
+header {
+  height: 245 px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #FAFFFD;
+}
+
+.logo {
+  font-family: "Sacramento", cursive;
+  font-weight: 400;
+  font-size: 104px;
+  line-height: 1;
+  text-align: center;
 }
 
 /* Layout */
@@ -55,20 +78,11 @@ body {
 }
 
 .sidebar, .posts {
-  background: #fff;
+  background: #FAFFFD;
   margin-right: 10px;
   padding: 40px;
-  border: 1px solid #444;
+  border: 1px solid #342E37;
   border-radius: 5px;
-}
-
-/* Logo */
-.logo {
-  font-family: "Sacramento", cursive;
-  font-weight: 400;
-  font-size: 104px;
-  line-height: 1;
-  text-align: center;
 }
 
 /* Lists */
@@ -79,7 +93,7 @@ body {
 }
 
 .list .active {
-  color: green;
+  color: #3C91E6;
 }
 
 .list-horizontal li {

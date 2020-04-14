@@ -2,8 +2,11 @@
 
 /* Variables */
 
-$color-light: #fff;
-$color-dark: #444;
+$color-light: #FAFFFD;
+$color-dark: #342E37;
+$color-hover: #9FD356;
+$color-active: #3C91E6;
+$color-highlight: #FA824C;
 
 $font-logo: 'Sacramento', cursive;
 $font-header: 'Oswald', sans-serif;
@@ -12,7 +15,10 @@ $font-text: 'Source Sans Pro', sans-serif;
 /* Global */
 a {
   text-decoration: none;
-  color: blue;
+  color: $color-dark;
+}
+a:hover {
+  color: $color-hover;
 }
 
 *, *::before, *::after {
@@ -31,6 +37,8 @@ body {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  padding-top: 245px;
+  z-index: -1;
 }
 
 .section-title {
@@ -43,6 +51,24 @@ body {
     font-weight: 400;
     color: lighten($color-dark, 20%);
   }
+}
+
+/* Header */
+
+header {
+  height: 245 px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: $color-light;
+}
+
+.logo {
+  font-family: $font-logo;
+  font-weight: 400;
+  font-size: 104px;
+  line-height: 1;
+  text-align: center;
 }
 
 /* Layout */
@@ -68,16 +94,6 @@ body {
   border-radius: 5px;
 }
 
-/* Logo */
-
-.logo {
-  font-family: $font-logo;
-  font-weight: 400;
-  font-size: 104px;
-  line-height: 1;
-  text-align: center;
-}
-
 /* Lists */
 
 .list {
@@ -85,7 +101,7 @@ body {
   margin: 0;
   padding: 0;
   .active {
-    color: green;
+    color: $color-active;
   }
 }
 
