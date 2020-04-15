@@ -26,8 +26,8 @@ body {
 .container {
   max-width: 1140px;
   margin: 0 auto;
-  padding-top: 245px;
-  z-index: -1;
+  /* padding-top: 245px;
+  z-index: -1; */
 }
 
 .section-title {
@@ -44,14 +44,13 @@ body {
 }
 
 /* Header */
-header {
+/* header {
   height: 245 px;
   position: fixed;
   top: 0;
   width: 100%;
-  background: #FAFFFD;
-}
-
+  background: $color-light;
+} */
 .logo {
   font-family: "Sacramento", cursive;
   font-weight: 400;
