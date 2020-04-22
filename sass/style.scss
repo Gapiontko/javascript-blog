@@ -108,6 +108,7 @@ body {
 .list-horizontal {
   li {
     display: inline-block;
+    padding-left: 3px;
   }
 }
 
@@ -140,6 +141,12 @@ body {
 }
 
 /* Tags */
+.tags {
+  li{
+    display: inline-block;
+    padding-left: 3px;
+  }
+}
 
 .tag-size-1 {
   font-size: 50%;
